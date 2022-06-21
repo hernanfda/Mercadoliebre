@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <script src="https://kit.fontawesome.com/d5d519f54c.js" crossorigin="anonymous"></script>
+  <title>ML Registro</title>
+</head>
+
+
+
+<body>
+
+  <header>
+    <div class="main-header">
+      <a href="/"><img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo
+        mercadolibre" /></a>
+  </header>
+  <main>
+
+    <div class="register">
+      <div class="register-title">
+        <h1>Crea tu cuenta</h1>
+      </div>
+      <form action="/registro" method="POST">
+        <div class="register-container">
+          <label for="nombre">Nombre y apellido: </label>
+          <input type="text" name="nombre" id="nombre" class="text-input" required />
+        </div>
+
+        <div class="register-container">
+          <label for="usuario">Nombre de usuario: </label>
+          <input type="text" name="usuario" id="usuario" class="text-input" required />
+        </div>
+
+        <div class="register-container">
+          <label for="fecha-de-nacimiento">Fecha de nacimiento: </label>
+          <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento" required />
+        </div>
+
+        <div class="register-container">
+          <label for="domicilio">Domicilio: </label>
+          <input type="text" name="domicilio" id="domicilio" class="text-input" required />
+        </div>
+
+        <div class="register-container">
+          <label for="clave">Contraseña: </label>
+          <input type="password" name="contraseña" id="contraseña" class="text-input" required />
+        </div>
+
+        <div class="register-container">
+          <label for="confirmar-clave">Confirmar contraseña: </label>
+          <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" class="text-input" required />
+        </div>
+
+        <div>
+          <p class="tit-perfil">Perfil:</p>
+          <div class="perfil-container">
+            <div>
+              <label for="comprar">Comprar </label>
+              <input type="radio" name="perfil" id="comprar" value="comprar" class="radio-btn" required />
+            </div>
+            <div>
+              <label for="vender">Vender </label>
+              <input type="radio" name="perfil" id="vender" value="vender" class="radio-btn" />
+            </div>
+          </div>
+        </div>
+
+        <div class="intereses-usuario register-container"">
+          <p class=" tit-perfil">Categorias de interes: </p>
+          <div class="register-container">
+            <label for="Electro">Electro</label>
+            <input type="checkbox" name="categorias-interes" id="Electro" value="electro" />
+          </div>
+          <div class="register-container">
+            <label for="Moda">Moda</label>
+            <input type="checkbox" name="categorias-interes" id="Moda" value="moda" />
+          </div>
+          <div class="register-container">
+            <label for="Hogar">Hogar</label> <input type="checkbox" name="categorias-interes" id="Hogar" value=hogar">
+          </div>
+          <div class="register-container">
+            <label for="jugueteria">Jugueteria</label>
+            <input type="checkbox" name="categorias-interes" id="jugueteria" value="jugueteria" />
+          </div>
+          <div class="register-container">
+            <label for="Vida-sana">Vida sana</label>
+            <input type="checkbox" name="categorias-interes" id="Vida-sana" value="vida-sana" />
+          </div>
+        </div>
+
+        <div class="register-container">
+          <label for="foto-usuario">Foto de usuario </label>
+          <input type="file" name="foto-usuario" id="foto-usuario" accept=".jpg" required />
+        </div>
+
+
+        <div class="btns-container">
+          <button type="submit" name="enviar" action="/register">Enviar</button>
+          <button type="reset" name="borrar">Borrar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <article class="copyright">
+      Copyright © 1999-2022 MercadoLiebre S.R.L.
+    </article>
+  </footer>
+</body>
+
+
+</html>

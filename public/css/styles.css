@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #666;
+  background-color: #ebebeb;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  background-color: #eac926;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.searchbar-form {
+  display: inline;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  margin: auto;
+  width: 90vw;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+article {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+footer {
+  margin-top: 10%;
+}
+
+.main-header {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 45vw;
+}
+
+.search-bar {
+  width: 45vw;
+  display: inline;
+}
+
+.search-input {
+  display: inline;
+  padding: 0.5%;
+}
+
+.compraCuotas {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  width: 100%;
+}
+
+.login-navbar {
+  display: none;
+}
+
+.burger-menu {
+  margin: auto;
+  justify-content: center;
+}
+
+.burger-icon {
+  padding: 12px;
+  font-size: 1.6rem;
+  border-radius: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #1259c3;
+  color: white;
+}
+
+.banner {
+  width: 100vw;
+}
+
+.titulares {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.cuerpos-de-texto {
+  font-size: 12px;
+}
+
+.productos {
+  justify-content: space-around;
+}
+
+.info-articulo {
+  background-color: white;
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  position: relative;
+}
+
+.fa-truck {
+  font-size: 1.1rem;
+  color: #39b54a;
+  display: block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.precio-descuento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.precios {
+  font-size: 18px;
+  width: 30%;
+}
+
+.descuentos {
+  font-size: 16px;
+  color: #39b54a;
+  width: 70%;
+  text-align: center;
+}
+
+.descripciones {
+  font-size: 16px;
+  padding-top: 5%;
+  display: none;
+}
+
+.footer-bullets {
+  text-align: center;
+}
+
+.big-icons {
+  margin-bottom: 15px;
+  font-size: 3.5em;
+  color: #1259c3;
+}
+
+.copyright {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ---------------------- INTEGRAR LA LUPA AL SEARCHBAR SOLO EN MOBILE ----------------- */
+@media (max-width: 480px) {
+  .search-bar {
+    width: 45vw;
+    position: relative;
+  }
+
+  .search-input {
+    display: inline;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    line-height: 1;
+    padding: 3%;
+  }
+
+  .btn-searchbar {
+    border: 0;
+    bottom: 3px;
+    color: grey;
+    background: white;
+    position: absolute;
+    right: 3px;
+    outline: none;
+    top: 3px;
+  }
+
+}
+
+/* ---------------------- MEDIA QUERIES ----------------- */
+@media (min-width: 481px) {
+  .search-input {
+    width: 90%;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navBars {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .site-nav {
+    display: flex;
+    width: 34vw;
+  }
+
+  .login-navbar {
+    display: flex;
+    width: 34vw;
+  }
+
+  .logo {
+    width: 32vw;
+  }
+
+  .search-bar {
+    width: 32vw;
+  }
+
+  .compraCuotas {
+    font-size: 11px;
+    margin: 5px;
+    width: 32vw;
+  }
+
+  ul {
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .productos {
+    width: 49%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .descripciones {
+    display: block;
+  }
+
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .compraCuotas {
+    font-size: 14px;
+  }
+
+  .site-nav {
+    width: 25vw;
+  }
+
+  .login-navbar {
+    width: 25vw;
+  }
+
+  .productos {
+    width: 24%;
+    box-shadow: none;
+  }
+
+  .productos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .descripciones {
+    display: none;
+  }
+
+  .productos:hover .descripciones {
+    display: block;
+  }
+
+  .fa-truck:hover {
+    animation: truck-rotate 2s;
+  }
+
+  .big-icons:hover {
+    color: #eac926;
+  }
+}
+
+@keyframes truck-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+/* ---------------------- REGISTRO/LOGIN ----------------- */
+
+.main-header {
+  justify-content: center;
+}
+
+.register-title {
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #666;
+  margin-bottom: 10px;
+}
+
+.register form {
+  width: 100%;
+}
+
+.register {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  box-shadow: inset 0px 0px 5px rgba(31, 30, 30, 0.2);
+  border-radius: 30px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.register-container {
+  padding: 10px;
+}
+
+.register-container input[type=text],
+input[type=date],
+input[type=password] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  line-height: 1;
+  padding: 5px;
+  background-color: white;
+  /* Input 3D */
+  box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.3), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  border-color: #1259c3;
+}
+
+.btns-container button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  line-height: 1;
+  width: 30%;
+}
+
+.btn-login {
+  width: 100%;
+}
+
+.btn-login button {
+  width: 100%;
+}
+
+button[type=submit]:hover {
+  background-color: #0022AA;
+  color: white;
+}
+
+button[type=reset]:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.tit-perfil {
+  text-align: center;
+}
+
+.perfil-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intereses-usuario .register-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
