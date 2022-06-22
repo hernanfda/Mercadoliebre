@@ -231,7 +231,7 @@ footer {
 }
 
 /* ---------------------- MEDIA QUERIES ----------------- */
-@media (min-width: 481px) {
+@media (min-width: 768px) {
   .search-input {
     width: 90%;
   }
@@ -298,9 +298,14 @@ footer {
     width: 90vw;
     margin: auto;
   }
+
+  .footer-bullets {
+    width: 28vw;
+  }
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .compraCuotas {
     font-size: 14px;
   }
